@@ -1,0 +1,13 @@
+<p>
+  parent works!
+</p>
+
+Child Counter: {{ p_counter }}
+
+<app-child [c_counter]='p_counter' (change)="updateCounter()"></app-child>
+
+<div *ngFor="let d of data">
+	<span> {{ d.id}} </span>
+	<span> {{ d.title}} </span>
+</div>
+

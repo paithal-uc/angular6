@@ -14,20 +14,10 @@ const routes: Routes = [
 		'path': 'page2',
 		'component': Page2Component
 	},
-
-	{
-		'path': 'module1',
-		'loadChildren': './module1/module1.module#Module1Module'
-	},
-
-	{
-		'path': 'module2',
-		'loadChildren': './module2/module2.module#Module2Module'
-	},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class Module2RoutingModule { }
